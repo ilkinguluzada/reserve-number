@@ -1,0 +1,33 @@
+1. Searching for number with prefix, number and category
+
+Method: [GET] 
+
+Headers: 
+Content-Type:application/json
+Client-Service:reserve-number-client
+Auth-Key:reservenumberrestapi
+
+URL: https://reserve-number.ilkin-guluzada.com/index.php/api/number/search/{PREFIX}/{NUMBER}/{CATEGORY_ID}
+
+Example URL: https://reserve-number.ilkin-guluzada.com/index.php/api/number/search/055/9292236/1
+
+--
+
+2. Reserving specific number. 
+
+Method: [POST] 
+
+Headers: 
+Content-Type:application/json
+Client-Service:reserve-number-client
+Auth-Key:reservenumberrestapi
+
+Body:
+number_id: {Number ID}
+phone: {Phone}
+
+Example Body:
+number_id:1
+phone:0559292235
+
+URL: https://reserve-number.ilkin-guluzada.com/index.php/api/number/reserve
